@@ -9,23 +9,23 @@ document.addEventListener('DOMContentLoaded',function() {
 		switch (userLevel) {
 			case 1:
 				operators = ['+', '-'];
-				range = [1,10];
+				range = [1,20];
 				break;
 			case 2:
 				operators = ['+', '-'];
-				range = [11,30];
+				range = [20,100];
 				break;
 			case 3:
-				operators = ['+', '-'];
-				range = [31,50];
+		                operators = ['+', '-','*'];
+				range = [1,100];
 				break;
 			case 4:
 				operators = ['*', '/'];
-				range = [1,10];
+				range = [1,100];
 				break;
 			case 5:
 				operators = ['+', '-', '*', '/'];
-				range = [1,10];
+				range = [1,200];
 				break;
 		}
 	}
