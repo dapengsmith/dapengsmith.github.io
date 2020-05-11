@@ -28,7 +28,7 @@ h1 {
 	text-align: center;
 	font-family: 'Verdana';
 	letter-spacing: 0.1em;
-	font-size: 6.5em;
+	font-size: 1.5em;
 	margin-bottom: 0.5em;
 	color: yellow;
 	text-shadow: 4px 3px 5px orange;
@@ -36,7 +36,7 @@ h1 {
 
 #correct_ans {
 	font-family: 'Verdana';
-	font-size: 2.5em;
+	font-size: 1.5em;
 	color: #41b0d4;
 	text-shadow: 4px 3px 5px #3e9a65;
 }
@@ -50,7 +50,7 @@ h1 {
 #level {
 	font-family: Verdana;
 	letter-spacing: 0.1em;
-	font-size: 5em;
+	font-size: 1em;
 	font-variant: small-caps;
 	font-weight: bolder;
 	color: #FA175f;
@@ -62,7 +62,7 @@ h1 {
 
 #sum {
 	font-family: cursive;
-	font-size: 4em;
+	font-size: 1em;
 	font-weight: bolder;
     line-height: 1.2;
 	padding: 0.5em;
@@ -87,7 +87,7 @@ input {
 #score {
 	align-self: center;
 	font-family: cursive;
-	font-size: 3em;
+	font-size: 1.5em;
 	font-weight: bolder;
 	padding: 0.2em;
 	display: inline-block;
