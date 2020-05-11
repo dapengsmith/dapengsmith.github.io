@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded',function() {
 	}
 
 	function generateQuestion() {
-		score.innerHTML = `Score :- ${userScore} / ${totalQuestions}`;
-		level.innerHTML = `Level ${userLevel}`;
+		score.innerHTML = `分数 :- ${userScore} / ${totalQuestions}`;
+		level.innerHTML = `级别 ${userLevel}`;
 		setOperatorsAndRange();
 		num1 = randomNumber(range[0],range[1]);
 		num2 = randomNumber(range[0],range[1]);
@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded',function() {
 			if(ans.length === 0) {
 				this.blur();
 				swal({
-					  title: 'Dumbass',
-					  text: 'Enter the answer!!',
+					  title: '笨蛋',
+					  text: '输入答案!!',
 					  type: 'warning'
 					}).then(function() {
 						this.focus();
@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded',function() {
 				else {
 					this.blur();
 					swal({
-					  title: 'Wrong Answer',
-					  html: `<span id='correct_ans'>Correct answer for ${num1} ${randomOperator} ${num2} = ${result}</span>`,
+					  title: '傻瓜，答错了！',
+					  html: `<span id='correct_ans'>正确答案 ${num1} ${randomOperator} ${num2} = ${result}</span>`,
 					  type: 'error'
 					}).then(function() {
 						this.focus();
@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded',function() {
 				if(currentLevel !== userLevel) {
 					this.blur();
 					swal(
-					  'Good job!',
-					  `You reached Level ${userLevel}!`,
+					  '你真棒!',
+					  `过关级别 ${userLevel}!`,
 					  'info'
 					).then(function() {
 						this.focus();
@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded',function() {
 				if(userLevel === 6) {
 					this.blur();
 					swal({
-					  title: 'Congratulations!',
-					  text: `You completed the Quiz!`,
+					  title: '恭喜你!',
+					  text: `通过测试!`,
 					  type: 'success',
-					  confirmButtonText: 'Restart the Quiz !!'
+					  confirmButtonText: '再玩一次 !!'
 					}).then(function () {
 					  userScore = 0;
 					  userLevel = 1;
